@@ -167,3 +167,7 @@ That matters more for Scrabble-like games than for chess because move legality d
 ## License
 
 Scuteboard is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).
+
+## Versioning
+
+Current Upstream version: 0.1.0
