@@ -24,7 +24,7 @@ Still rough:
 - Scoring is not complete
 - Cross-word and dictionary validation are incomplete
 - Engine configuration is basic
-- No packaged release yet
+- Windows release packaging is experimental
 - Tests are still needed
 
 ## Install
@@ -42,6 +42,21 @@ python -m pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+## Build A Windows Release
+
+This repo includes a GitHub Actions workflow that builds Scuteboard with PyInstaller on Windows.
+
+To make a release build, push a version tag:
+
+```bash
+git tag v0.1.0-alpha.1
+git push origin v0.1.0-alpha.1
+```
+
+The workflow uploads `Scuteboard-windows-x64.zip` as a workflow artifact and, for tag builds, attaches it to a GitHub release.
+
+You can also run the workflow manually from GitHub Actions with `workflow_dispatch`.
 
 ## Run A CGP Bot
 
